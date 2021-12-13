@@ -1,0 +1,33 @@
+
+{% extends 'authenticate/base.html' %}
+{% block content %}
+
+    {% if user.is_authenticated %}
+    <p>Name: {{user.first_name}} {{user.last_name}} </p>
+    <p>Username: {{user.username}} </p>
+    <p>Email: {{user.email}} </p>
+
+    {% else %}
+    <h1>About</h1>
+    <p>Welcome to one of the largest students association of RUET combining the students
+        from Jessore,Ghenaidah,Magura and Narail.The idea behind this association is to 
+        form an strong understanding between RUETians of same culture and help each other 
+        to survive and complete one of the important chapter in our life.Here we take advices 
+        from our seniors about career and also academic needs. We organize different types of 
+        seminars and cultural events to celebrate our RUET life together and share our life experiences.
+        We also have an enreached library from where students can collect their academic books for free.
+        The idea behind this website is to make everyone one step closer to each other and share our experiences and 
+        important informations.
+    </p><br>
+    <h1>Gallery</h1>
+
+</div>
+    {% endif %}
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="text-center text-lg-start bg-light text-muted col-12">
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Contact: gjsa@gmail.com
+        <a class="text-reset fw-bold" </a>
+      </div>
+      </footer>
+{% endblock %}
